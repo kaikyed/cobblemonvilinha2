@@ -1,4 +1,10 @@
+
+/* CÓDIGO LEGADO - POR FAVOR NÃO MEXA EM NADA!!! */
+/* NÃO SEI OQUE ACONTECE A POR AQUI - Kaiky */
+/* MAS SE TA FUNCIONANDO TA ÓTIMO! - Kaiky*/
+
 /* Github Code Highlighting. */
+
 @import "../../../node_modules/github-syntax-dark/lib/github-dark.css";
 
 :root {
@@ -8,11 +14,8 @@
     --rosa-disabled:  #ff99c2;
     --rosa-sombra:    rgba(255, 77, 148, 0.6);
 }
-/*******************************************************************************
- *                                                                             *
- * Fonts                                                                       *
- *                                                                             *
- ******************************************************************************/
+
+/* FONTES */
 
 @font-face {
     font-family: 'Avenir Book';
@@ -29,53 +32,44 @@
     src: url('../fonts/Ringbearer.ttf');
 }
 
-/*******************************************************************************
- *                                                                             *
- * Element Styles                                                              *
- *                                                                             *
- ******************************************************************************/
+/* ELEMENTS STYLES */
 
 /* Reset body, html, and div presets. */
+
 body, html, div {
     margin: 0px;
     padding: 0px;
 }
 
 /* Reset p presets. */
+
 p {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }
 
 /* Set default font and color. */
+
 body, button {
     font-family: 'Avenir Book';
     color: white;
 }
 
-/*body {
-    background: url('./../images/backgrounds/0.jpg') no-repeat center center fixed;
-    background-size: cover;
-}*/
-
-/*******************************************************************************
- *                                                                             *
- * Frame Styles (frame.ejs)                                                    *
- *                                                                             *
- ******************************************************************************/
+/* Frame Styles (frame.ejs) */
 
 /* Frame Bar */
+
 #frameBar {
     position: relative;
     z-index: 100;
     display: flex;
     flex-direction: column;
     transition: background-color 1s ease;
-    /*background-color: rgba(0, 0, 0, 0.5);*/
     -webkit-user-select: none;
 }
 
 /* Undraggable region on the top of the frame. */
+
 #frameResizableTop {
     height: 2px;
     width: 100%;
@@ -83,18 +77,21 @@ body, button {
 }
 
 /* Flexbox to wrap the main frame content. */
+
 #frameMain {
     display: flex;
     height: 20px
 }
 
 /* Undraggable region on the left and right of the frame. */
+
 .frameResizableVert {
     width: 2px;
     -webkit-app-region: no-drag;
 }
 
 /* Main frame content for windows. */
+
 #frameContentWin {
     display: flex;
     justify-content: space-between;
@@ -103,6 +100,7 @@ body, button {
 }
 
 /* Main frame content for darwin. */
+
 #frameContentDarwin {
     display: flex;
     justify-content: flex-start;
@@ -112,6 +110,7 @@ body, button {
 }
 
 /* Frame logo (windows only). */
+
 #frameTitleDock {
     padding: 0px 10px;
 }
@@ -122,6 +121,7 @@ body, button {
 }
 
 /* Windows frame button dock. */
+
 #frameButtonDockWin {
     -webkit-app-region: no-drag !important;
     position: relative;
@@ -134,6 +134,7 @@ body, button {
 }
 
 /* Darwin frame button dock: NaN; */
+
 #frameButtonDockDarwin {
     -webkit-app-region: no-drag !important;
     position: relative;
@@ -142,6 +143,7 @@ body, button {
 }
 
 /* Windows Frame Button Styles. */
+
 .frameButton {
     background: none;
     border: none;
@@ -161,6 +163,7 @@ body, button {
 }
 
 /* Close button is red. */
+
 #frameButton_close:hover,
 #frameButton_close:focus {
     background: rgba(255, 53, 53, 0.61) !important;
@@ -170,6 +173,7 @@ body, button {
 }
 
 /* Darwin Frame Button Styles. */
+
 .frameButtonDarwin {
     height: 12px;
     width: 12px;
@@ -216,11 +220,7 @@ body, button {
     background-color: #bfff76;
 }
 
-/*******************************************************************************
- *                                                                             *
- * Welcome View (welcome.ejs)                                                  *
- *                                                                             *
- ******************************************************************************/
+/* Welcome View (welcome.ejs) */
 
 #welcomeContainer {
     position: relative;
@@ -241,43 +241,6 @@ body, button {
     top: -10%;
     position: relative;
 }
-
-/*
-.cloudDiv {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.cloudTop {
-    height: 50%;
-    width: 100%;
-    background-image: url('../images/cloudTrans.png');
-    animation: clouds1 80s linear infinite;
-    background-size: cover;
-}
-
-.cloudBottom {
-    height: 50%;
-    width: 100%;
-    background-image: url('../images/cloudTrans2.png');
-    animation: clouds2 70s linear infinite;
-    background-size: cover;
-}
-
-@keyframes clouds1 {
-    to {
-        background-position: 200%;
-    }
-}
-@keyframes clouds2 {
-    to {
-        background-position: 230%;
-    }
-}
-*/
 
 #welcomeImageSeal {
     border-radius: 50%;
@@ -315,6 +278,7 @@ body, button {
 }
 
 /* Login button styles. */
+
 #welcomeButton {
     background: none;
     font-weight: bold;
@@ -370,13 +334,10 @@ body, button {
     align-items: center;
 }
 
-/*******************************************************************************
- *                                                                             *
- * Login View (login.ejs)                                                      *
- *                                                                             *
- ******************************************************************************/
+/* Login View (login.ejs)  */
 
 /* Styles for dimmer login span. */
+
 .loginSpanDim {
     font-size: 12px;
     color: #848484;
@@ -384,6 +345,7 @@ body, button {
 }
 
 /* Main login container. */
+
 #loginContainer {
     position: relative;
     display: flex;
@@ -396,6 +358,7 @@ body, button {
 }
 
 /* Login cancel button styles. */
+
 #loginCancelContainer {
     position: absolute;
     top: 5%;
@@ -403,6 +366,7 @@ body, button {
 }
 
 /* Login cancel button styles. */
+
 #loginCancelButton {
     background: none;
     border: none;
@@ -439,6 +403,7 @@ body, button {
 }
 
 /* The X in a circle icon for the cancel button. */
+
 #loginCancelIcon {
     border-radius: 50%;
     border: 1px solid white;
@@ -451,13 +416,16 @@ body, button {
     margin-bottom: 5px;
     transition: 0.25s ease;
 }
+
 /* Text for the login cancel button. */
+
 #loginCancelText {
     font-size: 15px;
     transition: 0.25s ease;
 }
 
 /* Login content wrapper. */
+
 #loginContent {
     display: flex;
     justify-content: center;
@@ -467,6 +435,7 @@ body, button {
 }
 
 /* Login form. */
+
 #loginForm {
     display: flex;
     flex-direction: column;
@@ -475,6 +444,7 @@ body, button {
 }
 
 /* Login form anchor styles. */
+
 #loginForm a {
     font-size: 12px;
     color: #848484;
@@ -492,6 +462,7 @@ body, button {
 }
 
 /* Logo on login form. */
+
 #loginImageSeal {
     border-radius: 50%;
     border: 2px solid #cad7e1;
@@ -503,6 +474,7 @@ body, button {
 }
 
 /* Header on login view. */
+
 #loginSubheader {
     font-family: 'Avenir Medium';
     margin-bottom: 25px;
@@ -512,6 +484,7 @@ body, button {
 }
 
 /* Container to organize login field elements. */
+
 .loginFieldContainer {
     position: relative;
     display: flex;
@@ -521,6 +494,7 @@ body, button {
 }
 
 /* SVG icons on the login view. */
+
 .loginSVG {
     fill: #fff;
     height: 20px;
@@ -528,6 +502,7 @@ body, button {
 }
 
 /* Span which displays errors related to login field content. */
+
 .loginErrorSpan {
     font-family: 'Avenir Medium';
     font-weight: bold;
@@ -564,6 +539,7 @@ body, button {
 }
 
 /* Login text input styles. */
+
 .loginField {
     font-family: 'Avenir Book';
     background: none;
@@ -598,11 +574,13 @@ body, button {
 }
 
 /* Add spacing between password field and options bar. */
+
 #labelPassword {
     margin-bottom: 13px;
 }
 
 /* Container which contains the forgot and remember options. */
+
 #loginOptions {
     display: flex;
     justify-content: space-between;
@@ -610,12 +588,14 @@ body, button {
 }
 
 /* Remember option text. */
+
 #loginRememberText {
     padding-right: 10px;
     transition: 0.25s ease;
 }
 
 /* Login button styles. */
+
 #loginButton {
     background: none;
     font-weight: bold;
@@ -754,31 +734,8 @@ body, button {
     }
 }
 
-
-
-/*.spinningCircle {
-    margin-left: 20px;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0);
-    border-top-color: #ffffff;
-    border-right-color: #ffffff;
-    border-left-color: rgba(255, 255, 255, 0.50);
-    border-bottom-color: rgba(255, 255, 255, 0.50);
-    animation: single2 4s infinite linear;
-}
-
-@keyframes single2 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(720deg);
-    }
-}*/
-
 /* Disclaimer container. */
+
 #loginDisclaimer {
     display: flex;
     flex-direction: column;
@@ -787,11 +744,13 @@ body, button {
 }
 
 /* Add spacing between register anchor and disclaimer. */
+
 #loginRegisterSpan {
     margin-bottom: 5px;
 }
 
 /* Disclaimer text styles. */
+
 .loginDisclaimerText {
     font-size: 7px;
     color: #848484;
@@ -799,11 +758,10 @@ body, button {
     text-align: center;
 }
 
-/* * *
-* Login View | Custom Checkbox
-* * */
+/* Login View | Custom Checkbox */
 
 /* Checkbox container. */
+
 #checkmarkContainer {
     display: flex;
     justify-content: flex-end;
@@ -815,6 +773,7 @@ body, button {
 }
 
 /* Hide the default checkbox. */
+
 #checkmarkContainer input {
     opacity: 0;
     cursor: pointer;
@@ -822,6 +781,7 @@ body, button {
 }
 
 /* Create a custom checkbox. */
+
 .loginCheckmark {
     position: relative;
     height: 10px;
@@ -831,13 +791,17 @@ body, button {
     background: none;
     transition: 0.25s ease;
 }
+
 /* On hover and focus, add a grey border color. */
+
 #checkmarkContainer:hover input ~ *,
 #checkmarkContainer input:focus ~ * {
     color: #a2a2a2;
     border-color: #a2a2a2;
 }
+
 /* On keydown, darken the checkbox a bit. */
+
 #checkmarkContainer input:active ~ *:not(#loginRememberText) {
     color: #8d8d8d;
     border-color: #8d8d8d;
@@ -845,17 +809,23 @@ body, button {
 #checkmarkContainer[disabled] {
     pointer-events: none;
 }
+
 /* For checked -> #checkmarkContainer input:checked ~ * */
 /* Create the checkmark/indicator (hidden when not checked). */
+
 .loginCheckmark:after {
     content: "";
     display: none;
 }
+
 /* Show the checkmark when checked. */
+
 #checkmarkContainer input:checked ~ .loginCheckmark:after {
     display: block;
 }
+
 /* Style the checkmark/indicator. */
+
 #checkmarkContainer .loginCheckmark:after {
     position: absolute;
     left: 3.5px;
@@ -867,24 +837,7 @@ body, button {
     transform: rotate(45deg);
 }
 
-/*
-#login_filter {
-    height: calc(100% - 22px);
-    width: 100%;
-    z-index: 9000;
-    position: absolute;
-    filter: blur(8px) contrast(0.9) brightness(1.0);
-    background: url('./../images/backgrounds/0.jpg') no-repeat center center fixed;
-    transform: scale(1.2);
-    background-size: cover;
-}
-*/
-
-/*******************************************************************************
- *                                                                             *
- * Waiting View (waiting.ejs)                                                  *
- *                                                                             *
- ******************************************************************************/
+/* Waiting View (waiting.ejs) */
 
 #waitingContainer {
     position: relative;
@@ -922,7 +875,6 @@ body, button {
     display: block;
     position: fixed;
     top: calc(50% - 5em);
-    /* left: 50%; */
     margin-top: -5em;
     margin-left: -5em;
     width: 10em;
@@ -959,11 +911,7 @@ body, button {
     }
 }
 
-/*******************************************************************************
- *                                                                             *
- * Login Options View (loginOptions.ejs)                                       *
- *                                                                             *
- ******************************************************************************/
+/* Login Options View (loginOptions.ejs) */
 
 #loginOptionsContainer {
     position: relative;
@@ -1049,13 +997,10 @@ body, button {
 }
 
 
-/*******************************************************************************
- *                                                                             *
- * Settings View (sttings.ejs)                                                 *
- *                                                                             *
- ******************************************************************************/
+/* Settings View (sttings.ejs) */
 
 /* Main settings container. */
+
 #settingsContainer {
     position: relative;
     height: 100%;
@@ -1065,6 +1010,7 @@ body, button {
 }
 
 /* Drop shadow displayed when content is scrolled out of view. */
+
 #settingsContainer:before {
     content: '';
     background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
@@ -1079,6 +1025,7 @@ body, button {
 }
 
 /* Left hand side of the settings UI, for navigation. */
+
 #settingsContainerLeft {
     padding-top: 4%;
     height: 100%;
@@ -1087,6 +1034,7 @@ body, button {
 }
 
 /* Settings navigation container. */
+
 #settingsNavContainer {
     height: 100%;
     display: flex;
@@ -1094,6 +1042,7 @@ body, button {
 }
 
 /* Navigation header styles. */
+
 #settingsNavHeader {
     height: 15%;
     display: flex;
@@ -1104,6 +1053,7 @@ body, button {
 }
 
 /* Navigation items outer container. */
+
 #settingsNavItemsContainer {
     height: 85%;
     display: flex;
@@ -1112,6 +1062,7 @@ body, button {
 }
 
 /* Navigation items content container. */
+
 #settingsNavItemsContent {
     height: 100%;
     display: flex;
@@ -1120,6 +1071,7 @@ body, button {
 }
 
 /* Navigation item shared styles. */
+
 .settingsNavItem {
     background: none;
     border: none;
@@ -1143,17 +1095,20 @@ body, button {
 }
 
 /* Div to add some space between nav items. */
+
 .settingsNavSpacer {
     height: 25px;
 }
 
 /* Content container for the done button. */
+
 #settingsNavContentBottom {
     position: absolute;
     top: 65%;
 }
 
 /* Settings navigational divider. */
+
 .settingsNavDivider {
     width: 75%;
     height: 1px;
@@ -1163,6 +1118,7 @@ body, button {
 }
 
 /* Settings done button styles. */
+
 #settingsNavDone {
     background: none;
     border: none;
@@ -1188,6 +1144,7 @@ body, button {
 }
 
 /* Right hand side of the settings container, for tabs. */
+
 #settingsContainerRight {
     height: 100%;
     width: 75%;
@@ -1195,6 +1152,7 @@ body, button {
 }
 
 /* Settings tab shared styles. */
+
 .settingsTab {
     width: 100%;
     height: 100%;
@@ -1212,16 +1170,19 @@ body, button {
 }
 
 /* Add spacing to the top of each settings tab. */
+
 .settingsTab > *:first-child {
     margin-top: 5%;
 }
 
 /* Add spacing to the bottom of each settings tab. */
+
 .settingsTab > *:last-child {
     margin-bottom: 20%;
 }
 
 /* Tab header shared styles. */
+
 .settingsTabHeader {
     display: flex;
     flex-direction: column;
@@ -1236,6 +1197,7 @@ body, button {
 }
 
 /* Selected server content container */
+
 .settingsSelServContainer {
     background: rgba(0, 0, 0, 0.25);
     width: 75%;
@@ -1246,6 +1208,7 @@ body, button {
 }
 
 /* Div which will be populated with the selected server's information. */
+
 .settingsSelServContent {
     display: flex;
     align-items: center;
@@ -1254,6 +1217,7 @@ body, button {
 }
 
 /* Wrapper container for the switch server button. */
+
 .settingsSwitchServerContainer {
     display: flex;
     align-items: center;
@@ -1261,6 +1225,7 @@ body, button {
 }
 
 /* Button to switch server configurations on the mods tab. */
+
 .settingsSwitchServerButton {
     opacity: 0;
     border: 1px solid rgb(255, 255, 255);
@@ -1289,11 +1254,13 @@ body, button {
 }
 
 /* Remove spin button from number inputs. */
+
 #settingsContainer input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
 /* Default styles for text/number inputs. */
+
 #settingsContainer input[type=number],
 #settingsContainer input[type=text] {
     color: white;
@@ -1315,6 +1282,7 @@ body, button {
 }
 
 /* Styles for a generic settings entry. */
+
 .settingsFieldContainer {
     display: flex;
     align-items: center;
@@ -1344,6 +1312,7 @@ body, button {
 }
 
 /* Toggle Switch */
+
 .toggleSwitch {
     position: relative;
     display: inline-block;
@@ -1381,7 +1350,6 @@ body, button {
 }
 input:checked + .toggleSwitchSlider {
     background-color: rgb(31, 140, 11);
-    /* box-shadow: inset 2px 1px 20px black; */
     border: 1px solid rgb(31, 140, 11);
 }
 input:checked + .toggleSwitchSlider:before {
@@ -1389,6 +1357,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Range Slider styles. */
+
 .rangeSlider {
     width: 35%;
     height: 5px;
@@ -1419,6 +1388,7 @@ input:checked + .toggleSwitchSlider:before {
 /* File selectors */
 
 /* Main container for File selectors. */
+
 .settingsFileSelContainer {
     display: flex;
     flex-direction: column;
@@ -1429,17 +1399,20 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* File selector title. */
+
 .settingsFileSelTitle {
     margin-bottom: 10px;
 }
 
 /* Wrapper container for the actionable elements. */
+
 .settingsFileSelActions {
     display: flex;
     width: 90%;
 }
 
 /* File selector icon settings. */
+
 .settingsFileSelIcon {
     display: flex;
     align-items: center;
@@ -1455,6 +1428,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Disabled text field which stores the selected file path. */
+
 .settingsFileSelVal {
     border-radius: 0px !important;
     width: 100%;
@@ -1464,6 +1438,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* File selection button. */
+
 .settingsFileSelButton {
     border: 0px;
     border-radius: 0px 3px 3px 0px;
@@ -1485,6 +1460,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Description for the file selector. */
+
 .settingsFileSelDesc {
     font-size: 10px;
     margin: 20px 0px;
@@ -1495,9 +1471,7 @@ input:checked + .toggleSwitchSlider:before {
     font-family: 'Avenir Medium';
 }
 
-/* * *
-* Settings View (Account Tab)
-* * */
+/* Settings View (Account Tab) */
 
 .settingsAuthAccountTypeContainer {
     display: flex;
@@ -1521,6 +1495,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Settings add account button styles. */
+
 .settingsAddAuthAccount {
     background: none;
     border: none;
@@ -1545,6 +1520,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Auth account list container styles. */
+
 .settingsCurrentAccounts {
     margin-bottom: 5%;
 }
@@ -1556,6 +1532,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Auth account shared styles. */
+
 .settingsAuthAccount {
     display: flex;
     background: rgba(0, 0, 0, 0.25);
@@ -1564,22 +1541,26 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Left hand side of an auth account element, for the skin image. */
+
 .settingsAuthAccountLeft {
     padding: 5px 5px 5px 20px;
 }
 
 /* Image of the auth account's skin. */
+
 .settingsAuthAccountImage {
     height: 115px;
 }
 
 /* Right hand side of the auth account, for info + actions. */
+
 .settingsAuthAccountRight {
     display: flex;
     width: 100%;
 }
 
 /* Account details container. */
+
 .settingsAuthAccountDetails {
     display: flex;
     flex-direction: column;
@@ -1592,6 +1573,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Account detail element styles. */
+
 .settingsAuthAccountDetailPane {
     display: flex;
     flex-direction: column;
@@ -1608,6 +1590,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Account actions container. */
+
 .settingsAuthAccountActions {
     display: flex;
     flex-direction: column;
@@ -1617,6 +1600,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Account select button shared styles. */
+
 .settingsAuthAccountSelect {
     opacity: 0;
     border: none;
@@ -1640,6 +1624,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Account logout button shared styles. */
+
 .settingsAuthAccountLogOut {
     opacity: 0;
     border: 1px solid rgb(241, 55, 55);
@@ -1667,11 +1652,10 @@ input:checked + .toggleSwitchSlider:before {
     opacity: 1;
 }
 
-/* * *
-* Settings View (Minecraft Tab)
-* * */
+/* Settings View (Minecraft Tab)*/
 
 /* Game resolution UI elements. */
+
 #settingsGameResolutionContainer {
     display: flex;
     flex-direction: column;
@@ -1694,16 +1678,16 @@ input:checked + .toggleSwitchSlider:before {
     width: 75px;
 }
 
-/* * *
-* Settings View (Mods Tab)
-* * */
+/* Settings View (Mods Tab) */
 
 /* Main content container for the mod elements. */
+
 #settingsModsContainer {
     width: 75%;
 }
 
 /* Mod sub-container header text. */
+
 .settingsModsHeader {
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -1711,6 +1695,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Mod elements sub-containers. */
+
 #settingsReqModsContainer,
 #settingsOptModsContainer,
 #settingsDropinModsContainer {
@@ -1718,6 +1703,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Main content containers for mod elements. */
+
 #settingsReqModsContent,
 #settingsOptModsContent,
 #settingsDropinModsContent {
@@ -1728,6 +1714,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Mod elements. */
+
 .settingsMod,
 .settingsDropinMod {
     padding: 10px;
@@ -1739,6 +1726,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Main content container for mod element information. */
+
 .settingsModContent {
     display: flex;
     align-items: center;
@@ -1747,12 +1735,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Wrapper container for the left side of a mod element. */
+
 .settingsModMainWrapper {
     display: flex;
     align-items: center;
 }
 
 /* Mod enabled/disabled status. */
+
 .settingsModStatus {
     width: 7px;
     height: 7px;
@@ -1763,34 +1753,40 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Mod details container. */
+
 .settingsModDetails {
     display: flex;
     flex-direction: column;
 }
 
 /* The version of the mod. */
+
 .settingsModVersion {
     color: grey;
     font-size: 10px;
 }
 
 /* Disabled toggleswitch for required mods. */
+
 .toggleSwitch[reqmod] {
     filter: grayscale(49%) brightness(60%);
     pointer-events: none;
 }
 
 /* Set the status color of an enabled mod. */
+
 .settingsBaseMod[enabled] > .settingsModContent > .settingsModMainWrapper > .settingsModStatus {
     background-color: rgb(165, 195, 37);
 }
 
 /* Add opacity to submods of a disabled mod. */
+
 .settingsBaseMod:not([enabled]) > .settingsSubModContainer .settingsModContent {
     opacity: 0.5;
 }
 
 /* Curve the left border for submods. */
+
 .settingsSubModContainer > .settingsSubMod:first-child {
     border-top-left-radius: 10px;
 }
@@ -1803,11 +1799,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Wrapper container for all submods. */
+
 .settingsSubModContainer {
     margin-top: 10px;
 }
 
 /* Button to open the mods folder for drop-in mods. */
+
 #settingsDropinFileSystemButton {
     background: rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(126, 126, 126, 0.57);
@@ -1827,13 +1825,16 @@ input:checked + .toggleSwitchSlider:before {
     background: rgba(54, 54, 54, 0.25);
     text-shadow: 0px 0px 20px white;
 }
+
 /* Refresh instructions on the file system button. */
+
 #settingsDropinRefreshNote {
     font-size: 10px;
     pointer-events: none;
 }
 
 /* Button to remove drop-in mods. */
+
 .settingsDropinRemoveButton {
     background: none;
     border: none;
@@ -1856,6 +1857,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Shaderpack settings description. */
+
 #settingsShaderpackDesc {
     font-size: 10px;
     margin: 10px 0px;
@@ -1865,11 +1867,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Wrapper container. */
+
 #settingsShaderpackWrapper {
     display: flex;
 }
 
 /* Button to add shaderpacks. */
+
 #settingsShaderpackButton {
     background: rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(126, 126, 126, 0.57);
@@ -1889,12 +1893,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Main select container. */
+
 .settingsSelectContainer {
     position: relative;
     width: 50%;
 }
 
 /* Div which displays the selected option. */
+
 .settingsSelectSelected {
     border-radius: 3px;
     border-width: 1px;
@@ -1903,6 +1909,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Style the arrow inside the select element. */
+
 .settingsSelectSelected:after {
     position: absolute;
     content: "";
@@ -1915,6 +1922,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Point the arrow upwards when the select box is open (active). */
+
 .settingsSelectSelected.select-arrow-active:after {
     border-color: transparent transparent rgba(126, 126, 126, 0.57) transparent;
     top: 7px;
@@ -1924,6 +1932,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Options content container. */
+
 .settingsSelectOptions {
     position: absolute;
     top: 100%;
@@ -1936,7 +1945,9 @@ input:checked + .toggleSwitchSlider:before {
     border-top: none;
     border-radius: 0px 0px 3px 3px;
 }
+
 /* Hide the items when the select box is closed. */
+
 .settingsSelectOptions[hidden] {
     display: none;
 }
@@ -1952,6 +1963,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Shared styles between options and selection div. */
+
 .settingsSelectOptions div,
 .settingsSelectSelected {
     background: rgba(0, 0, 0, 0.25);
@@ -1970,15 +1982,15 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Hover + selected styles. */
+
 .settingsSelectOptions div:hover, .settingsSelectOptions div[selected] {
     background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
-/* * *
-* Settings View (Java Tab)
-* * */
+/* Settings View (Java Tab) */
 
 /* Style links on the Java tab. */
+
 #settingsTabJava a,
 .settingsChangelogText a {
     color: rgba(202, 202, 202, 0.75);
@@ -1997,6 +2009,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Main container for memory management. */
+
 #settingsMemoryContainer {
     width: 75%;
     display: flex;
@@ -2006,6 +2019,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Memory management title. */
+
 #settingsMemoryTitle {
     margin-bottom: 10px;
     padding-bottom: 5px;
@@ -2013,6 +2027,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Memory management content. */
+
 #settingsMemoryContent {
     display: flex;
     justify-content: space-between;
@@ -2028,11 +2043,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Header for memory sliders. */
+
 .settingsMemoryHeader {
     font-size: 14px;
 }
 
 /* Wrapper container for a memory slider and label. */
+
 .settingsMemoryActionContainer {
     display: flex;
     align-items: center;
@@ -2040,18 +2057,21 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Label which displays a memory slider's value. */
+
 .settingsMemoryLabel {
     font-size: 14px;
     margin-right: 2%;
 }
 
 /* Range sliders for min and max memory settings. */
+
 #settingsMaxRAMRange,
 #settingsMinRAMRange {
     width: 85%;
 }
 
 /* Memory status elements. */
+
 #settingsMemoryStatus {
     display: flex;
     flex-direction: column;
@@ -2075,6 +2095,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Description for memory management. */
+
 #settingsMemoryDesc {
     font-size: 10px;
     margin: 20px 0px;
@@ -2083,6 +2104,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Status text which displays details on the selected executable. */
+
 #settingsJavaExecDetails {
     font-weight: bold;
     color: grey;
@@ -2090,22 +2112,26 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Main container for the JVM options setting. */
+
 #settingsJVMOptsContainer {
     width: 75%;
 }
 
 /* JVM options title. */
+
 #settingsJVMOptsTitle {
     margin-bottom: 10px;
 }
 
 /* Wrapper container for the actionable elements. */
+
 #settingsJVMOptsContent {
     display: flex;
     width: 90%;
 }
 
 /* Text field to input the JVM options. */
+
 #settingsJVMOptsVal {
     border-radius: 0px 3px 3px 0px !important;
     width: 100%;
@@ -2125,20 +2151,18 @@ input:checked + .toggleSwitchSlider:before {
     width: 89%;
 }
 
-/* * *
-* Settings View (Launcher Tab)
-* * */
+/* Settings View (Launcher Tab) */
 
 /* Tailored style for the data directory header. */
+
 #settingsDataDirTitle {
     margin-bottom: 10px;
 }
 
-/* * *
-* Settings View (About Tab)
-* * */
+/* Settings View (About Tab) */
 
 /* Main about content container. */
+
 #settingsAboutCurrentContainer {
     display: flex;
     flex-direction: column;
@@ -2150,6 +2174,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* About content. */
+
 #settingsAboutCurrentContent {
     display: flex;
     flex-direction: column;
@@ -2157,6 +2182,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* About header elements. */
+
 #settingsAboutCurrentHeadline {
     display: flex;
     align-items: center;
@@ -2174,6 +2200,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Current version container. */
+
 #settingsAboutCurrentVersion {
     display: flex;
     align-items: center;
@@ -2181,6 +2208,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Checkmark next to the version information. */
+
 #settingsAboutCurrentVersionCheck {
     border-radius: 50%;
     background: #23aa23;
@@ -2195,11 +2223,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Current version details container. */
+
 #settingsAboutCurrentVersionDetails {
     margin-left: 10px;
 }
 
 /* Release type text. */
+
 #settingsAboutCurrentVersionTitle {
     font-size: 12px;
     font-family: 'Avenir Medium';
@@ -2208,6 +2238,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Current version text. */
+
 #settingsAboutCurrentVersionLine {
     font-size: 10px;
     color: grey;
@@ -2215,6 +2246,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* About information links. */
+
 #settingsAboutButtons {
     display: flex;
     padding: 0px 15px;
@@ -2239,6 +2271,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Main changelog container. */
+
 .settingsChangelogContainer {
     display: flex;
     flex-direction: column;
@@ -2250,6 +2283,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Changelog content container. */
+
 .settingsChangelogContent {
     display: flex;
     flex-direction: column;
@@ -2257,12 +2291,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Changelog header container. */
+
 .settingsChangelogHeadline {
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(126, 126, 126, 0.57);
 }
 /* Changelog header label. */
+
 .settingsChangelogLabel {
     font-size: 12px;
     color: grey;
@@ -2270,11 +2306,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Changelog text content container. */
+
 .settingsChangelogText {
     font-size: 12px;
 }
 
 /* Styles for the changelog elements. */
+
 .settingsChangelogText p {
     margin-bottom: 16px;
     line-height: 1.5;
@@ -2327,20 +2365,21 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Container for the changelog button. */
+
 .settingsChangelogActions {
     padding: 0px 15px 5px 15px;
 }
 
 /* Open changelog on GitHub. */
+
 .settingsChangelogButton {
     padding: 0px;
 }
 
-/* * *
-* Settings View (Updates Tab)
-* * */
+/* Settings View (Updates Tab) */
 
 /* Main about content container. */
+
 #settingsUpdateStatusContainer {
     display: flex;
     flex-direction: column;
@@ -2352,6 +2391,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Update content. */
+
 #settingsUpdateStatusContent {
     display: flex;
     flex-direction: column;
@@ -2359,6 +2399,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Update header elements. */
+
 #settingsUpdateStatusHeadline {
     display: flex;
     align-items: center;
@@ -2372,6 +2413,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Update version container. */
+
 #settingsUpdateVersion {
     display: flex;
     align-items: center;
@@ -2380,6 +2422,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Checkmark next to the version information. */
+
 #settingsUpdateVersionCheck {
     border-radius: 50%;
     background: #23aa23;
@@ -2394,11 +2437,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Update version details container. */
+
 #settingsUpdateVersionDetails {
     margin-left: 10px;
 }
 
 /* Release type text. */
+
 #settingsUpdateVersionTitle {
     font-size: 12px;
     font-family: 'Avenir Medium';
@@ -2407,6 +2452,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Current version text. */
+
 #settingsUpdateVersionLine {
     font-size: 10px;
     color: grey;
@@ -2414,6 +2460,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Update action container. */
+
 #settingsUpdateActionContainer {
     padding-top: 10px;
     font-size: 14px;
@@ -2421,6 +2468,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Update action button styles. */
+
 #settingsUpdateActionButton {
     display: flex;
     flex-direction: column;
@@ -2446,13 +2494,10 @@ input:checked + .toggleSwitchSlider:before {
     pointer-events: none;
 }
 
-/*******************************************************************************
- *                                                                             *
- * Landing View (Structural Styles)                                            *
- *                                                                             *
- ******************************************************************************/
+/* Landing View (Structural Styles) */
 
 /* Main content container. */
+
 #landingContainer {
     height: 100%;
     position: relative;
@@ -2461,6 +2506,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Upper content container. */
+
 #landingContainer > #upper {
     position: relative;
     transition: top 2s ease;
@@ -2486,6 +2532,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Lower content container. */
+
 #landingContainer > #lower {
     height: 23%;
     display: flex;
@@ -2531,13 +2578,10 @@ input:checked + .toggleSwitchSlider:before {
     display: inline-flex;
 }
 
-/*******************************************************************************
- *                                                                             *
- * Landing View (News Styles)                                                  *
- *                                                                             *
- ******************************************************************************/
+/* Landing View (News Styles) */
 
 /* Main container. */
+
 #newsContainer {
     position: absolute;
     top: 100%;
@@ -2550,6 +2594,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* News content container. */
+
 #newsContent {
     height: 82vh;
     width: 100%;
@@ -2559,6 +2604,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Drop shadow displayed when content is scrolled out of view. */
+
 #newsContent:before {
     content: '';
     background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
@@ -2573,6 +2619,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* News article status container (left). */
+
 #newsStatusContainer {
     width: calc(30% - 60px);
     height: calc(100% - 30px);
@@ -2584,6 +2631,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* News status content. */
+
 #newsStatusContent {
     display: flex;
     flex-direction: column;
@@ -2591,12 +2639,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* News title wrapper. */
+
 #newsTitleContainer {
     display: flex;
     max-width: 90%;
 }
 
 /* News article title styles. */
+
 #newsArticleTitle {
     font-size: 18px;
     font-weight: bold;
@@ -2617,12 +2667,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* News meta container. */
+
 #newsMetaContainer {
     display: flex;
     flex-direction: column;
 }
 
 /* Date and author wrappers. */
+
 #newsArticleDateWrapper,
 #newsArticleAuthorWrapper {
     display: flex;
@@ -2630,6 +2682,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Date and author shared styles. */
+
 #newsArticleDate,
 #newsArticleAuthor {
     display: inline-block;
@@ -2640,6 +2693,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Date styles. */
+
 #newsArticleDate {
     background: white;
     color: black;
@@ -2647,11 +2701,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Author styles. */
+
 #newsArticleAuthor {
     background: #a02d2a;
 }
 
 /* News article comments styles. */
+
 #newsArticleComments {
     margin-top: 5px;
     display: inline-block;
@@ -2671,6 +2727,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Article content container (right). */
+
 #newsArticleContainer {
     width: calc(100% - 25px);
     height: 100%;
@@ -2678,6 +2735,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Article content styles. */
+
 #newsArticleContentScrollable {
     font-size: 12px;
     overflow-y: scroll;
@@ -2747,11 +2805,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Div to add spacing at the end of a news article. */
+
 .newsArticleSpacerBot {
     height: 30px;
 }
 
 /* News navigation container. */
+
 #newsNavigationContainer {
     display: flex;
     justify-content: center;
@@ -2764,12 +2824,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Navigation status span. */
+
 #newsNavigationStatus {
     font-size: 12px;
     margin: 0px 15px;
 }
 
 /* Left and right navigation button styles. */
+
 #newsNavigateLeft,
 #newsNavigateRight {
     background: none;
@@ -2806,6 +2868,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* News error (message) container. */
+
 #newsErrorContainer {
     height: 100%;
     display: flex;
@@ -2821,6 +2884,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* News error content (message). */
+
 .newsErrorContent {
     font-size: 20px;
 }
@@ -2831,7 +2895,9 @@ input:checked + .toggleSwitchSlider:before {
 #nELoadSpan {
     white-space: pre;
 }
+
 /* News error retry button styles. */
+
 #newsErrorRetry {
     font-size: 12px;
     font-weight: bold;
@@ -2850,17 +2916,12 @@ input:checked + .toggleSwitchSlider:before {
     text-shadow: 0px 0px 20px #c7c7c7;
 }
 
-/*******************************************************************************
- *                                                                             *
- * Landing View (Top Styles)                                                   *
- *                                                                             *
- ******************************************************************************/
+/* Landing View (Top Styles) */
 
-/* * *
-* Landing View (Top Styles) | Left Content
-* * */
+/* Landing View (Top Styles) | Left Content */
 
 /* Logo image. */
+
 #image_seal {
     height: 70px;
     width: auto;
@@ -2871,6 +2932,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Logo container styles. */
+
 #image_seal_container {
     position: relative;
     height: 70px;
@@ -2880,6 +2942,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Logo container styles w/ update. */
+
 #image_seal_container[update]{
     cursor: pointer
 }
@@ -2902,6 +2965,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Update available tooltip styles. */
+
 #updateAvailableTooltip {
     cursor: pointer;
     visibility: hidden;
@@ -2938,6 +3002,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Update available animation. */
+
 @keyframes glow-grow {
     0% {
         opacity: 0;
@@ -2952,11 +3017,10 @@ input:checked + .toggleSwitchSlider:before {
     }
 }
 
-/* * *
-* Landing View (Bottom Styles) | Right Content
-* * */
+/* Landing View (Bottom Styles) | Right Content */
 
 /*  Wrapper container for top, right content. */
+
 #rightContainer {
     display: flex;
     flex-direction: column;
@@ -2967,6 +3031,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Right hand user content container. */
+
 #user_content {
     display: flex;
     align-items: center;
@@ -2976,6 +3041,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* User profile avatar container. */
+
 #avatarContainer {
     border-radius: 50%;
     border: 2px solid #cad7e1;
@@ -2992,6 +3058,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Avatar edit overlay. */
+
 #avatarOverlay {
     opacity: 0;
     position: absolute;
@@ -3019,6 +3086,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* User profile name text. */
+
 #user_text {
     font-size: 12px;
     min-width: 135px;
@@ -3036,6 +3104,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* 2. Posicionamos o menu na esquerda absoluta da tela */
+
 #mediaContent {
     padding: 15px 5px;
     top: 50%;
@@ -3044,6 +3113,7 @@ input:checked + .toggleSwitchSlider:before {
     min-height: 0 !important;
     
     /* Configurações de Posição */
+
     position: absolute !important; 
     left: 20px !important;       /* Distância da borda esquerda */
     right: auto !important;      /* Anula a posição direita */
@@ -3052,12 +3122,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* 3. Corrigimos a posição dos balões de texto (tooltips) para aparecerem à DIREITA dos ícones */
+
 #settingsTooltip {
     right: auto !important;
     left: 140% !important; /* Joga o balão para a direita do ícone */
 }
 
 /* 4. Corrigimos a setinha do balão para apontar para a esquerda (na direção do ícone) */
+
 #settingsTooltip::after {
     left: -10px !important; /* Posiciona a seta no lado esquerdo do balão */
     right: auto !important;
@@ -3065,12 +3137,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Social Media Icon division containers. */
+
 #internalMedia, #externalMedia {
     display: flex;
     flex-direction: column;
 }
 
 /* Container object which wraps an icon to ensure fluid transitions. */
+
 .mediaContainer {
     display: flex;
     justify-content: center;
@@ -3079,6 +3153,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Divider bar between the external and internal icons. */
+
 .mediaDivider {
     height: 1px;
     width: 14px;
@@ -3087,6 +3162,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Social media icon shared styles. */
+
 .mediaSVG {
     fill: #ffffff;
     height: 12px;
@@ -3102,11 +3178,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Social media URL shared styles. */
+
 .mediaURL {
     outline: none;
 }
 
 /* Internal media button shared styles. */
+
 .mediaButton {
     background: none;
     border: none;
@@ -3121,6 +3199,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Settings icon colors. */
+
 #settingsSVG {
     stroke: #ffffff;
     height: 15px;
@@ -3132,6 +3211,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Settings tooltip styles. */
+
 #settingsTooltip {
     visibility: hidden;
     opacity: 0;
@@ -3166,6 +3246,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* X icon colors. */
+
 #xSVG:hover,
 #xURL:focus #xSVG {
     fill: #000000;
@@ -3175,16 +3256,17 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Instagram icon colors. */
+
 #instagramSVG:hover,
 #instagramURL:focus #instagramSVG {
     fill: url('#instaFill')
-    /*fill: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
 }
 #instagramSVG:active {
     fill: url('#instaFill')
 }
 
 /* Youtube icon colors. */
+
 #youtubeSVG:hover,
 #youtubeURL:focus #youtubeSVG {
     fill: #f00;
@@ -3194,6 +3276,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Discord icon colors. */
+
 #discordSVG:hover,
 #discordURL:focus #discordSVG {
     fill: #7288d9;
@@ -3202,13 +3285,10 @@ input:checked + .toggleSwitchSlider:before {
     fill: #657ac4;
 }
 
-/*******************************************************************************
- *                                                                             *
- * Landing View (Bottom Styles)                                                *
- *                                                                             *
- ******************************************************************************/
+/* Landing View (Bottom Styles) */
 
 /* Style for a general label on the bottom of the landing view. */
+
 .bot_label {
     font-size: 9px;
     letter-spacing: 1px;
@@ -3217,6 +3297,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Divider used on the bottom of the landing view. */
+
 .bot_divider {
     height: 25px;
     width: 2px;
@@ -3225,17 +3306,17 @@ input:checked + .toggleSwitchSlider:before {
     margin-right: 20px;
 }
 
-/* * *
-* Landing View (Bottom Styles) | Left Content
-* * */
+/* Landing View (Bottom Styles) | Left Content */
 
 /* Maintains maximum width on the status bar. */
+
 #server_status_wrapper {
     display: inline-flex;
     width: 75px;
 }
 
 /* Span which displays the player count of the selected server. */
+
 #player_count {
     color: #949494;
     font-size: 8px;
@@ -3245,6 +3326,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Wrapper container for the mojang status bar. */
+
 #mojangStatusWrapper {
     position: relative;
     display: flex;
@@ -3252,6 +3334,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Icon which displays the status of the mojang services. */
+
 #mojang_status_icon {
     font-size: 30px;
     color: #848484;
@@ -3260,6 +3343,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Tooltip which displays more details about the mojang statuses. */
+
 #mojangStatusTooltip {
     position: absolute;
     visibility: hidden;
@@ -3297,6 +3381,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Tooltip title for the mojang statuses. */
+
 #mojangStatusTooltipTitle {
     width: 100%;
     text-align: center;
@@ -3305,6 +3390,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Wrapper container for the non essential services title. */
+
 #mojangStatusNEContainer {
     display: flex;
     align-items: center;
@@ -3312,6 +3398,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* White bar which surrounds the non essential service title. */
+
 .mojangStatusNEBar {
     height: 1px;
     width: 100%;
@@ -3319,6 +3406,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Non essential service title text. */
+
 #mojangStatusNETitle {
     font-size: 10px;
     padding: 0px 3px;
@@ -3327,11 +3415,13 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Wrapper container for mojang service information. */
+
 .mojangStatusContainer {
     display: flex;
 }
 
 /* Displays the name of the mojang service. */
+
 .mojangStatusName {
     width: 100%;
     font-size: 10px;
@@ -3341,17 +3431,17 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Displays the status of the mojang service. */
+
 .mojangStatusIcon {
     margin-right: 10px;
     font-size: 18.5px;
     color: #848484;
 }
 
-/* * *
-* Landing View (Bottom Styles) | Center Content
-* * */
+/*Landing View (Bottom Styles) | Center Content */
 
 /* Button which opens the news view. */
+
 #newsButton {
     background: none;
     border: none;
@@ -3382,6 +3472,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Icon which indicates there is new news. */
+
 #newsButtonAlert {
     width: 5px;
     height: 5px;
@@ -3393,6 +3484,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Arrow image which floats above the news button. */
+
 #newsButtonSVG {
     height: 11px;
     margin-left: -2px;
@@ -3400,6 +3492,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Span which contains the news button text. */
+
 #newsButtonText {
     color: white;
     font-weight: 900;
@@ -3411,11 +3504,10 @@ input:checked + .toggleSwitchSlider:before {
     transition: 0.25s ease;
 }
 
-/* * *
-* Landing View (Bottom Styles) | Right Content
-* * */
+/* Landing View (Bottom Styles) | Right Content */
 
 /* Main launch content container. */
+
 #landingContainer > #lower > #right #launch_content {
     position: relative;
     top: 25px;
@@ -3423,6 +3515,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* The launch button. */
+
 #launch_button {
     background: none;
     border: none;
@@ -3450,6 +3543,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Launch details main container, hidden until launch processing begins. */
+
 #launch_details {
     position: relative;
     top: 25px;
@@ -3457,11 +3551,13 @@ input:checked + .toggleSwitchSlider:before {
 }
  
 /* Left side of launch details container, displays percentage and a divider. */
+
 #launch_details_left {
     display: flex;
 }
 
 /* Span which displays percentage complete. */
+
 #launch_progress_label {
     font-weight: 900;
     letter-spacing: 1px;
@@ -3473,6 +3569,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Right side of launch details container, displays progress bar and details. */
+
 #launch_details_right {
     display: flex;
     flex-direction: column;
@@ -3480,6 +3577,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Button which opens the server selection view. */
+
 #server_selection_button {
     background: none;
     border: none;
@@ -3499,6 +3597,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Progress bar styles. */
+
 #launch_progress[value] {
     height: 3px;
     width: 265px;
@@ -3512,6 +3611,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Span which displays information about the status of the launch process. */
+
 #launch_details_text {
     font-size: 11px;
     text-overflow: ellipsis;
@@ -3519,17 +3619,12 @@ input:checked + .toggleSwitchSlider:before {
     overflow: hidden;
 }
 
-/*******************************************************************************
- *                                                                             *
- * Overlay View (overlay.ejs)                                                  *
- *                                                                             *
- ******************************************************************************/
+/* Overlay View (overlay.ejs) */
 
-/* * *
-* Overlay View (Main Content)
-* * */
+/* Overlay View (Main Content)*/
 
 /* Overlay container, placed over the main div. */
+
 #overlayContainer {
     position: absolute;
     z-index: 500;
@@ -3543,21 +3638,20 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Main overlay content. */
+
 #overlayContent {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: space-between;*/
     width: 300px;
-    /*height: 35%;*/
     box-sizing: border-box;
     padding: 15px 0px;
-    /* background-color: #424242; */
     text-align: center;
 }
 
 /* Main overlay content anchor styles. */
+
 #overlayContent a,
 #overlayDismiss {
     color: rgba(202, 202, 202, 0.75);
@@ -3574,6 +3668,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Add spacing between overlay content elements. */
+
 #overlayContent > *:first-child {
     margin-top: 0px !important;
 }
@@ -3585,6 +3680,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Overlay title styles. */
+
 #overlayTitle {
     font-family: 'Avenir Medium';
     font-size: 20px;
@@ -3594,6 +3690,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Overlay description styles. */
+
 #overlayDesc {
     font-size: 12px;
     font-weight: bold;
@@ -3601,6 +3698,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Div which contains action buttons. */
+
 #overlayActionContainer {
     display: flex;
     flex-direction: column;
@@ -3608,6 +3706,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Overlay acknowledge button styles. */
+
 #overlayAcknowledge {
     background: none;
     border: 1px solid #ffffff;
@@ -3630,6 +3729,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Overlay dismiss option styles. */
+
 #overlayDismiss {
     font-weight: bold;
     font-size: 10px;
@@ -3647,11 +3747,10 @@ input:checked + .toggleSwitchSlider:before {
     color: rgba(165, 165, 165, 0.75);
 }
 
-/* * *
-* Overlay View (Server + Account Selection Content)
-* * */
+/* Overlay View (Server + Account Selection Content) */
 
 /* Server selection content container. */
+
 #serverSelectContent,
 #accountSelectContent {
     display: flex;
@@ -3662,6 +3761,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Server selection header. */
+
 #serverSelectHeader,
 #accountSelectHeader {
     font-family: 'Avenir Medium';
@@ -3672,6 +3772,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Wrapper div for the list of available servers. */
+
 #serverSelectList,
 #accountSelectList {
     display: flex;
@@ -3683,6 +3784,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Scrollable div which lists the available servers. */
+
 #serverSelectListScrollable,
 #accountSelectListScrollable {
     padding: 0px 5px;
@@ -3703,6 +3805,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Content container for a server listing. */
+
 .serverListing {
     border: none;
     padding: 0px;
@@ -3760,6 +3863,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Add spacing between server listings. */
+
 #serverSelectListScrollable > .serverListing:not(:first-child):not(:last-child),
 #accountSelectListScrollable > .accountListing:not(:first-child):not(:last-child) {
     margin: 5px 0px;
@@ -3774,6 +3878,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Server listing image. */
+
 .serverListingImg {
     margin: 0px 10px 0px 5px;
     border: 1px solid #fff;
@@ -3782,6 +3887,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Content container for the server listing's details. */
+
 .serverListingDetails {
     display: flex;
     flex-direction: column;
@@ -3791,12 +3897,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* The name of the server listing. */
+
 .serverListingName {
     font-size: 14px;
     font-weight: bold;
 }
 
 /* Description for the server listing. */
+
 .serverListingDescription {
     font-size: 10px;
     line-height: 10px;
@@ -3805,6 +3913,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Content container for the server listing's information. */
+
 .serverListingInfo {
     width: 100%;
     display: flex;
@@ -3812,6 +3921,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* The minecraft version of the server listing. */
+
 .serverListingVersion {
     font-size: 10px;
     text-align: center;
@@ -3826,6 +3936,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* The revision version of the server's manifest. */
+
 .serverListingRevision {
     color: #969696;
     font-size: 10px;
@@ -3834,6 +3945,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Star which indicates the default (main) server. */
+
 .serverListingStarWrapper {
     display: flex;
     align-items: center;
@@ -3841,7 +3953,9 @@ input:checked + .toggleSwitchSlider:before {
     height: 12px;
     position: relative;
 }
+
 /* Tooltip which displays when hovering over the star. */
+
 .serverListingStarTooltip {
     visibility: hidden;
     opacity: 0;
@@ -3872,6 +3986,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Content container which contains the server select actions. */
+
 #serverSelectActions,
 #accountSelectActions {
     display: flex;
@@ -3882,6 +3997,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Server selection confirm button styles. */
+
 #serverSelectConfirm,
 #accountSelectConfirm {
     background: none;
@@ -3909,6 +4025,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Server selection cancel button styles. */
+
 #serverSelectCancel,
 #accountSelectCancel {
     font-weight: bold;
@@ -3933,13 +4050,10 @@ input:checked + .toggleSwitchSlider:before {
     color: rgba(165, 165, 165, 0.75);
 }
 
-/*******************************************************************************
- *                                                                             *
- * Loading Element (app.ejs)                                                   *
- *                                                                             *
- ******************************************************************************/
+/* Loading Element (app.ejs) */
 
 /* Loading container, placed above everything. */
+
 #loadingContainer {
     position: absolute;
     z-index: 400;
@@ -3951,6 +4065,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Loading content container. */
+
 #loadingContent {
     position: relative;
     display: flex;
@@ -3960,6 +4075,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Spinner container. */
+
 #loadSpinnerContainer {
     position: relative;
     display: flex;
@@ -3968,6 +4084,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Stationary image for the spinner. */
+
 #loadCenterImage {
     position: absolute;
     width: 277px;
@@ -3975,6 +4092,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Rotating image for the spinner. */
+
 #loadSpinnerImage {
     width: 280px;
     height: auto;
@@ -3982,6 +4100,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Rotating animation for the spinner. */
+
 @keyframes rotating {
     from {
         transform: rotate(0deg);
@@ -3992,12 +4111,15 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Class which is applied when the spinner image is spinning. */
+
 .rotating {
     animation: rotating 120s linear infinite;
 }
 
+/* AQUI EU SEI OQUE ACONTECE - Kaiky */
+
 /* ==========================================================================
-   HELIOS LAUNCHER - TEMA VILINHA (FINAL - SEM NOTÍCIAS)
+   HELIOS LAUNCHER - TEMA VILINHA
    ========================================================================== */
 
 :root {
@@ -4054,7 +4176,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* --- 2. LOGO E USUÁRIO --- */
 
-/* LOGO NA DIREITA (COM FUNDO ROSA) */
+/* LOGO LATERAL PEQUENA (SEAL) NA DIREITA */
 #image_seal_container {
     position: absolute !important;
     right: 30px !important; left: auto !important;
@@ -4100,16 +4222,58 @@ input:checked + .toggleSwitchSlider:before {
     display: none !important; /* Esconde o botão */
 }
 
-/* --- 4. ÁREA CENTRAL --- */
+/* --- 4. ÁREA CENTRAL (COM A LOGO FLUTUANDO ALTA) --- */
 #landingContainer > #lower { position: relative; }
+
 #landingContainer > #lower > #left,
 #landingContainer > #lower > #center,
 #landingContainer > #lower > #right {
     width: auto !important; height: auto !important;
     position: absolute !important;
 }
-#landingContainer > #lower > #center { display: none !important; }
 
+/* CONFIGURAÇÃO DA LOGO CENTRAL */
+#landingContainer > #lower > #center {
+    display: flex !important; 
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* MUDANÇA: 'fixed' solta a logo para flutuar livre na tela */
+    position: fixed !important; 
+    
+    /* CENTRALIZA NA HORIZONTAL */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    
+    /* CONTROLAR A ALTURA (Distância do TOPO da tela) */
+    /* 10% = Lá em cima / 50% = Meio da tela / 90% = Lá embaixo */
+    top: 35% !important; 
+    
+    /* Reseta o bottom para não dar conflito */
+    bottom: auto !important; 
+    
+    z-index: 300;
+    width: auto !important;
+    height: auto !important;
+    pointer-events: none;
+}
+
+/* Estilo da Imagem da Logo */
+#logoVilinha {
+    max-width: 500px;
+    width: 80vw;
+    height: auto;
+    filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.5));
+    animation: flutuarLogo 4s ease-in-out infinite;
+}
+
+@keyframes flutuarLogo {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Posição do Status (Esquerda/Centro-Baixo) */
 #landingContainer > #lower > #left {
     display: flex !important;
     align-items: center !important;
@@ -4117,7 +4281,7 @@ input:checked + .toggleSwitchSlider:before {
     left: 50% !important;
     transform: translateX(-50%) !important;
     bottom: 170px !important; 
-    z-index: 200; top: auto !important; margin: 0 !important;
+    z-index: 400; top: auto !important; margin: 0 !important;
 }
 #landingContainer > #lower > #left #content {
     position: static !important;
@@ -4137,11 +4301,12 @@ input:checked + .toggleSwitchSlider:before {
     color: white !important;
 }
 
+/* Posição do Botão Jogar (Direita/Centro-Baixo) */
 #landingContainer > #lower > #right {
     left: 50% !important;
     transform: translateX(-50%) !important;
     bottom: 60px !important; 
-    z-index: 100; top: auto !important;
+    z-index: 400; top: auto !important;
     justify-content: center !important;
     display: flex !important;
 }
@@ -4242,4 +4407,10 @@ input:checked + .toggleSwitchSlider { background-color: var(--rosa-principal); b
     color: var(--rosa-principal) !important;
     box-shadow: 0 0 10px var(--rosa-principal) !important;
     text-shadow: 0 0 10px var(--rosa-principal) !important;
+}
+
+/* Remove a opção de editar o avatar (Overlay) */
+#avatarOverlay {
+    display: none !important;
+    pointer-events: none !important;
 }
