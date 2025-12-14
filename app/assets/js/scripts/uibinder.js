@@ -28,8 +28,7 @@ let currentView
 
 /**
  * Switch launcher views.
- * 
- * @param {string} current The ID of the current view container. 
+ * * @param {string} current The ID of the current view container. 
  * @param {*} next The ID of the next view container.
  * @param {*} currentFadeTime Optional. The fade out time for the current view.
  * @param {*} nextFadeTime Optional. The fade in time for the next view.
@@ -50,8 +49,7 @@ function switchView(current, next, currentFadeTime = 500, nextFadeTime = 500, on
 
 /**
  * Get the currently shown view container.
- * 
- * @returns {string} The currently shown view container.
+ * * @returns {string} The currently shown view container.
  */
 function getCurrentView(){
     return currentView
@@ -107,6 +105,34 @@ async function showMainUI(data){
     initNews().then(() => {
         $('#newsContainer *').attr('tabindex', '-1')
     })
+
+    // --- NOVA LÓGICA DE ATUALIZAÇÃO (CLIQUE NO ÍCONE) ---
+    const updateSeal = document.getElementById('image_seal_container')
+    if (updateSeal) {
+        updateSeal.onclick = function() {
+            // Só executa se o ícone estiver com o modo "update" ativo
+            if (this.hasAttribute('update')) {
+                
+                // 1. Abre as configurações
+                const settingsBtn = document.getElementById('settingsMediaButton')
+                if(settingsBtn) settingsBtn.click()
+
+                // 2. Vai para a aba de atualizações
+                setTimeout(() => {
+                    const navItems = document.querySelectorAll('.settingsNavItem')
+                    for (let btn of navItems) {
+                        const text = btn.innerText.toLowerCase()
+                        // Verifica texto em inglês ou português
+                        if (text.includes('update') || text.includes('atualiza')) {
+                            btn.click()
+                            break
+                        }
+                    }
+                }, 100)
+            }
+        }
+    }
+    // ----------------------------------------------------
 }
 
 function showFatalStartupError(){
@@ -129,8 +155,7 @@ function showFatalStartupError(){
 
 /**
  * Common functions to perform after refreshing the distro index.
- * 
- * @param {Object} data The distro index object.
+ * * @param {Object} data The distro index object.
  */
 function onDistroRefresh(data){
     updateSelectedServer(data.getServerById(ConfigManager.getSelectedServer()))
@@ -142,8 +167,7 @@ function onDistroRefresh(data){
 
 /**
  * Sync the mod configurations with the distro index.
- * 
- * @param {Object} data The distro index object.
+ * * @param {Object} data The distro index object.
  */
 function syncModConfigurations(data){
 
@@ -226,8 +250,7 @@ function syncModConfigurations(data){
 
 /**
  * Ensure java configurations are present for the available servers.
- * 
- * @param {Object} data The distro index object.
+ * * @param {Object} data The distro index object.
  */
 function ensureJavaSettings(data) {
 
@@ -243,8 +266,7 @@ function ensureJavaSettings(data) {
  * Recursively scan for optional sub modules. If none are found,
  * this function returns a boolean. If optional sub modules do exist,
  * a recursive configuration object is returned.
- * 
- * @returns {boolean | Object} The resolved mod configuration.
+ * * @returns {boolean | Object} The resolved mod configuration.
  */
 function scanOptionalSubModules(mdls, origin){
     if(mdls != null){
@@ -283,12 +305,10 @@ function scanOptionalSubModules(mdls, origin){
 
 /**
  * Recursively merge an old configuration into a new configuration.
- * 
- * @param {boolean | Object} o The old configuration value.
+ * * @param {boolean | Object} o The old configuration value.
  * @param {boolean | Object} n The new configuration value.
  * @param {boolean} nReq If the new value is a required mod.
- * 
- * @returns {boolean | Object} The merged configuration.
+ * * @returns {boolean | Object} The merged configuration.
  */
 function mergeModConfiguration(o, n, nReq = false){
     if(typeof o === 'boolean'){
@@ -408,8 +428,7 @@ async function validateSelectedAccount(){
 /**
  * Temporary function to update the selected account along
  * with the relevent UI elements.
- * 
- * @param {string} uuid The UUID of the account.
+ * * @param {string} uuid The UUID of the account.
  */
 function setSelectedAccount(uuid){
     const authAcc = ConfigManager.setSelectedAccount(uuid)
