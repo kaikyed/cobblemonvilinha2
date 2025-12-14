@@ -6,9 +6,9 @@
 
 <p align="center">Launcher do Servidor de Minecraft Cobblemon Vilinha</p>
 
-![Screenshot 1](https://cdn.discordapp.com/attachments/1253719438788919379/1448467475481235477/image.png?ex=693b5df5&is=693a0c75&hm=4a2e906cb4eb76c8a5eabfc2c67066883c5c3269bda44c7ec90f58e0b0f1ddff&)
-![Screenshot 2](https://cdn.discordapp.com/attachments/1253719438788919379/1448467628501897247/image.png?ex=693b5e19&is=693a0c99&hm=e93e4b21e554dc9cc689ca806364d84f091637cbe229afd0a0b15a3c93ec7ffd&)
-![Screenshot 3](https://media.discordapp.net/attachments/1253719438788919379/1448467733170884708/image.png?ex=693b5e32&is=693a0cb2&hm=a6f76bde744e61e6ad8d8e26eb5ef3f209798d662a9cb711003ff95c9f6313ce&=&format=webp&quality=lossless)
+![Screenshot 1](https://cdn.discordapp.com/attachments/1253719438788919379/1448475750167740478/image.png?ex=693b65aa&is=693a142a&hm=2fbcfe5de64248f833ea085ea02e4f1c2726628c2500a0540ed9326f202cf020&)
+![Screenshot 2](https://cdn.discordapp.com/attachments/1253719438788919379/1448475979864604753/image.png?ex=693b65e0&is=693a1460&hm=eff5c6cf94cbd311b58105dd4ec890b0c59d10d5c96c5e469a50a28a232eee93&)
+![Screenshot 3](https://cdn.discordapp.com/attachments/1253719438788919379/1448476129974423572/image.png?ex=693b6604&is=693a1484&hm=a6abafe7e3270246be62c26def39f2addcdc4bfed379a755f727a9b6a599dbcf&)
 
 
 ## Atualizações
